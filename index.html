@@ -14,10 +14,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 
 </head>
 
 <body>
+
     <button id="theme-toggle" class="theme-button">🌙</button>
 
     <div class="container">
@@ -31,32 +35,42 @@
                 <br>
             </div>
             <div class="container hidden-on-load">
-                <div class="row">
-                    <p class="col-6" style="text-align: left;"><span></span></p>
-                    <div class="col-6 pt-2">
-                        <ul class="d-block" style="text-align: right;" id="contact">
-                            <li>
-                                <a href="mailto:gerasimoslorandos@gmail.com">Email</a>
+                <div>
+                    <div class="pt-2">
+                        <ul style="text-align: right;" id="contact">
+                            <li style="display: block;">
+                                <a href="mailto:gerasimoslorandos@gmail.com" target="_blank" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
                             </li>
-                            <li>
-                                <a href="https://www.instagram.com/__meteque/" target="_blank">Instagram</a>
+
+                            <li style="display: block;">
+                                <a href="https://www.instagram.com/__meteque/" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/gerasimos-lorandos-9bb3a894/"
-                                    target="_blank">LinkedIn</a>
+                            <li style="display: block;">
+                                <a href="https://www.linkedin.com/in/gerasimos-lorandos-9bb3a894/" target="_blank"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/GerAndLor" target="_blank">Github</a>
+                            <li style="display: block;">
+                                <a href="https://github.com/GerAndLor" target="_blank" aria-label="Github">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="container hidden-on-load" id="about">
             <h2 style="font-family: 'oswald';">ABOUT:</h2>
-            <p class="col-12" id="aboutText">
+            <p id="aboutText">
                 Greek/South African web developer and designer <span id="moreText" style="display: none;">with a
                     background in music
                     technology and film production from
@@ -183,6 +197,7 @@
             // Update button visibility on window resize
             window.addEventListener('resize', setToggleVisibility);
         });
+
     </script>
 </body>
 

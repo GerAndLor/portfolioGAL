@@ -24,7 +24,6 @@
 #homeQuote2,
 #homeQuote3 {
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
 .front {
@@ -34,6 +33,7 @@
 #contact li {
     list-style: none;
     font-family: 'Roboto';
+    margin-bottom: 10px;
 }
 
 #contact li a {
@@ -44,7 +44,7 @@
 }
 
 #contact li a:hover {
-    color: #868686;
+    color: #cacaca;
 }
 
 
@@ -53,7 +53,7 @@
     margin: 0 auto;
     padding-left: 0px;
     padding-right: 0px;
-    max-width: 100%;
+    width: 97%;
     font-size: 20px;
     text-align: left;
     font-family: "roboto";
@@ -67,7 +67,7 @@
 }
 
 #portfolio a:hover {
-    color: #868686;
+    color: #cacaca;
 }
 
 #about {
@@ -110,12 +110,9 @@
         font-size: 16px;
     }
 
+
     #about p {
         font-size: 16px;
-    }
-
-    #contact {
-        flex-direction: column;
     }
 
     #portfolio p {
@@ -173,7 +170,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #868686;
+    color: #cacaca;
 }
 
 body {
@@ -252,7 +249,7 @@ body.dark-theme a {
 }
 
 body.dark-theme a:hover {
-    color: #a9a9a9;
+    color: #6691a5;
 }
 
 body.dark-theme #contact a,
@@ -262,7 +259,7 @@ body.dark-theme #portfolio a {
 
 body.dark-theme #contact a:hover,
 body.dark-theme #portfolio a:hover {
-    color: #a9a9a9;
+    color: #6691a5;
 }
 
 #toggleButton {
