@@ -1,0 +1,282 @@
+#gerasimos {
+    height: 100vh;
+    font-family: 'oswald';
+    padding: 20px;
+}
+
+.container.home {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+}
+
+#homeQuote {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#homeQuote1,
+#homeQuote2,
+#homeQuote3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.front {
+    margin-bottom: 80px;
+}
+
+#contact li {
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+#contact li a {
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+}
+
+#contact li a:hover {
+    color: #868686;
+}
+
+
+#about,
+#portfolio {
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 100%;
+    font-size: 20px;
+    text-align: left;
+    font-family: "roboto";
+    transition: 1s;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    transition: 1s;
+}
+
+#portfolio a:hover {
+    color: #868686;
+}
+
+#about {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+#toggleButton {
+    border: solid;
+    border-radius: 10px;
+    color: rgb(35, 35, 35);
+}
+
+#portfolio {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    #gerasimos {
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #homeQuote {
+        font-size: 40px
+    }
+
+    #homeQuote1,
+    #homeQuote2,
+    #homeQuote3 {
+        font-size: 16px;
+    }
+
+    #contact li a {
+        font-size: 16px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #portfolio p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer p a {
+        font-size: 16px;
+    }
+}
+
+
+#work {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.word {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+.letter {
+    display: inline-block;
+    transition: transform 1s ease-out;
+}
+
+footer {
+    font-family: "oswald";
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 30px;
+    max-width: 100%;
+    color: rgb(16, 16, 16);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 1s;
+}
+
+footer a:hover {
+    color: #868686;
+}
+
+body {
+    transition: cursor 0.3s;
+    height: 100%;
+    margin: 0;
+    transition: 1s;
+    border: solid;
+    border-width: 20px;
+    padding: 30px;
+    border-color: rgb(35, 35, 35);
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+.hidden-on-load {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 2s ease;
+}
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.theme-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-button:hover {
+    background-color: #555;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #141414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #141414;
+    color: #f9f9f9;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme span,
+body.dark-theme div {
+    color: #ffffff;
+}
+
+body.dark-theme a {
+    color: #f9f9f9;
+    transition: color 1s ease;
+}
+
+body.dark-theme a:hover {
+    color: #a9a9a9;
+}
+
+body.dark-theme #contact a,
+body.dark-theme #portfolio a {
+    color: #f9f9f9;
+}
+
+body.dark-theme #contact a:hover,
+body.dark-theme #portfolio a:hover {
+    color: #a9a9a9;
+}
+
+#toggleButton {
+    margin-top: 10px;
+    display: block;
+}
+
+#toggleButton:focus {
+    outline: none;
+}
+
+body.dark-theme #toggleButton {
+    border: solid;
+    border-color: #f9f9f9;
+    color: #f9f9f9;
+    font-size: 16px;
+}
